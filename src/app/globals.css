@@ -1,1 +1,70 @@
-a
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0f1410;
+  --card: #1c231c;
+  --green: #25d366;
+  --orange: #ff6a00;
+  --text: #f3f1e9;
+  --text-dim: #a8ae9e;
+  --border: rgba(243, 241, 233, 0.1);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.btn-primary {
+  background: var(--green);
+  color: #0f1410;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mcard {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  display: block;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 106, 0, 0.14);
+  color: var(--orange);
+  margin-bottom: 10px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.admin-shell {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+.admin-nav {
+  border-right: 1px solid var(--border);
+  padding: 20px;
+}
+
+.admin-nav nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
